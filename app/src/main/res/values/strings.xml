@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyBeerApp</string>
+    <string name="search_your_beer">Search...</string>
+    <string name="search_icon_content_description">Search icon</string>
+    <string name="beer_image_content_description">Beer image</string>
+    <string name="beer_description_title">Description</string>
+    <string name="beer_food_pairing_title">Food pairing</string>
+</resources>
