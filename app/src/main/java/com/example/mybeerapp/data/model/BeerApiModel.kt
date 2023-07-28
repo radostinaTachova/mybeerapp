@@ -7,6 +7,6 @@ data class BeerApiModel(
     val tagline: String,
     val first_brewed: String,
     val description: String,
-    val image_url: String,
+    val image_url: String?,
     val abv: Float,
 )
