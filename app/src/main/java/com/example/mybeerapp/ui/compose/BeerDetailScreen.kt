@@ -24,7 +24,7 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
 import com.example.mybeerapp.R
-import com.example.mybeerapp.data.model.BeerApiModel
+import com.example.mybeerapp.data.model.BeerModel
 import com.example.mybeerapp.ui.theme.MyBeerAppTheme
 import com.example.mybeerapp.ui.theme.PrimaryGreen900
 import com.example.mybeerapp.ui.theme.Shapes
@@ -37,7 +37,7 @@ fun BeerDetailScreen(viewModel: BeerDetailViewModel = hiltViewModel()) {
 }
 
 @Composable
-fun DetailsView(beer: BeerApiModel?) {
+fun DetailsView(beer: BeerModel?) {
     Column(modifier = Modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp)) {
         //First part
         Row() {

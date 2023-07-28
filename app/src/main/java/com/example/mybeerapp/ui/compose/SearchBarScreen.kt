@@ -26,7 +26,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
 import com.example.mybeerapp.R
-import com.example.mybeerapp.data.model.BeerApiModel
+import com.example.mybeerapp.data.model.BeerModel
 import com.example.mybeerapp.ui.viewmodel.ListBeersViewModel
 import com.example.mybeerapp.ui.theme.*
 
@@ -43,7 +43,7 @@ fun SearchBarScreen(beersViewModel: ListBeersViewModel = hiltViewModel(), onBeer
 fun SearchBar(
     text: String,
     onTextChange: (String) -> Unit,
-    listOfResults: List<BeerApiModel>,
+    listOfResults: List<BeerModel>,
     onBeerClick: (Int) -> Unit,
 ) {
 

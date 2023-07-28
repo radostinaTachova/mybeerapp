@@ -2,7 +2,7 @@ package com.example.mybeerapp.ui.viewmodel
 
 import androidx.lifecycle.*
 import com.example.mybeerapp.data.BeerInterface
-import com.example.mybeerapp.data.model.BeerApiModel
+import com.example.mybeerapp.data.model.BeerModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -15,8 +15,8 @@ class BeerDetailViewModel @Inject constructor(
 
     private val beerId: Int? = savedStateHandle["selected_beer_id"]
 
-    private val _beer = MutableLiveData<BeerApiModel?>()
-    val beer: LiveData<BeerApiModel?>
+    private val _beer = MutableLiveData<BeerModel?>()
+    val beer: LiveData<BeerModel?>
         get() = _beer
 
     init {

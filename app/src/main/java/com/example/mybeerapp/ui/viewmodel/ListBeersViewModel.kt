@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.mybeerapp.data.BeerInterface
 import com.example.mybeerapp.data.BeerRepository
 import com.example.mybeerapp.data.model.BeerApiModel
+import com.example.mybeerapp.data.model.BeerModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import javax.inject.Inject
@@ -19,7 +20,7 @@ class ListBeersViewModel @Inject constructor(private val respository: BeerInterf
     val beers = searchText.mapLatest { text -> respository.getBeers(text) }
         .stateIn(viewModelScope,
             SharingStarted.WhileSubscribed(1000),
-            emptyList<BeerApiModel>())
+            emptyList<BeerModel>())
 
 
     fun onSearchTextChange(text: String) {
